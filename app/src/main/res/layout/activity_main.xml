@@ -26,6 +26,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="cilckMoreInfo"
         android:text="MORE INFO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btAbout"
@@ -50,8 +51,8 @@
 
     <ListView
         android:id="@+id/livTraffic"
-        android:layout_width="352dp"
-        android:layout_height="424dp"
+        android:layout_width="334dp"
+        android:layout_height="421dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"

@@ -13,12 +13,12 @@ public class MyAdapter extends BaseAdapter {
     //ประกาศตัวแปล
     Context context;
     int[] ints;//ตัวแปลเก็บรูป logo
-    String[] tiltleString, detailString;//tiltleString เก็บชื่อ logo, detailString เก็บรายละเอียด logo
+    String[] titleString, detailString;//titleString เก็บชื่อ logo, detailString เก็บรายละเอียด logo
 
-    public MyAdapter(Context context, int[] ints, String[] tiltleString, String[] detailString) {
+    public MyAdapter(Context context, int[] ints, String[] titleString, String[] detailString) {
         this.context = context;
         this.ints = ints;
-        this.tiltleString = tiltleString;
+        this.titleString = titleString;
         this.detailString = detailString;
     }
 
@@ -51,9 +51,9 @@ public class MyAdapter extends BaseAdapter {
 
         //show view นำข้อมูลไปแสดงผลบนแอป
         iconImageView.setImageResource(ints[i]);
-        titleTextView.setText(tiltleString[i]);
+        titleTextView.setText(titleString[i]);
         detailTextView.setText(detailString[i]);
 
-        return null;
+        return view1;
     }
 }//end class
