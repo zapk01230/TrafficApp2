@@ -68,4 +68,9 @@ public class MainActivity extends AppCompatActivity {
 
     }//end cilckMoreInfo
 
+    public void clickAboutApp(View view) {
+        Intent aboutAppIntent = new Intent(MainActivity.this, AboutApp.class);
+        startActivity(aboutAppIntent);
+
+    }//end clickAboutApp() Method
 }//end Class
